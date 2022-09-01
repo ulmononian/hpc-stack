@@ -16,7 +16,7 @@ zlib:
 libpng:
   build: YES
   shared: NO
-  version: 1.6.35
+  version: 1.6.37
 
 szip:
   build: YES
@@ -73,17 +73,17 @@ pio:
 
 esmf:
   build: YES
-  version: ESMF_8_2_0
-  install_as: 8.2.0
-  shared: NO
+  version: v8.3.0b09
+  install_as: 8.3.0b09
+  shared: YES
   enable_pnetcdf: NO
   debug: NO
 
 fms:
   build: YES
-  version: 2022.01
+  version: 2022.03
   repo: noaa-gfdl
-  cmake_opts: "-DGFS_PHYS=ON -D64BIT=ON -DOPENMP=ON"
+  cmake_opts: "-DGFS_PHYS=ON -D64BIT=ON -DOPENMP=ON -DCONSTANTS=GFS"
 
 bacio:
   build: YES
@@ -325,7 +325,7 @@ yafyaml:
 mapl:
   build: YES
   repo: GEOS-ESM
-  esmf_version: 8.2.0
+  esmf_version: 8.3.0b09
   version: v2.22.0
 
 geos:
