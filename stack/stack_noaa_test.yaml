@@ -1,3 +1,12 @@
+gnu:
+  build: NO
+  version: 9.3.0
+
+mpi:
+  build: NO
+  flavor: openmpi
+  version: 4.0.1
+
 cmake:
   build: NO
   bootstrap: NO
@@ -176,8 +185,8 @@ g2tmpl:
 
 crtm:
   build: YES
-  version: v2.4.0
-  install_as: 2.4.0
+  version: v2.3.0
+  install_as: 2.3.0
   is_nceplib: YES
   install_fix: NO
 
@@ -196,8 +205,8 @@ wrf_io:
 
 bufr:
   build: YES
-  version: bufr_v11.5.0
-  install_as: 11.5.0
+  version: bufr_v11.7.0
+  install_as: 11.7.0
   python: NO
   is_nceplib: YES
 
@@ -223,8 +232,9 @@ grib_util:
 
 ncio:
   build: YES
-  version: v1.1.0
-  install_as: 1.1.0
+  version: v1.1.2
+  install_as: 1.1.2
+  build: YES
   is_nceplib: YES
 
 ncdiag:
@@ -232,11 +242,6 @@ ncdiag:
   version: v1.0.0
   install_as: 1.0.0
   is_nceplib: YES
-
-boost:
-  build: YES
-  version: 1.68.0
-  level: headers-only
 
 eigen:
   build: YES
